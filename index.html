@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Portfolio of Koushik Babu A S, an artificial intelligence student building LLM apps, computer vision systems, and full-stack AI products."
+    />
+    <title>Koushik Babu A S | AI Portfolio</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Koushik Babu A S home">
+        <span class="brand-mark">KB</span>
+        <span>Koushik Babu A S</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <canvas id="hero-canvas" aria-hidden="true"></canvas>
+        <div class="hero-grid" data-animate>
+          <p class="eyebrow">AI engineer in progress / Class of 2026</p>
+          <h1 id="hero-title">Koushik Babu A S</h1>
+          <p class="hero-copy">
+            I fine-tune and train LLMs from scratch, then ship practical
+            full-stack products across web and cross-platform mobile.
+          </p>
+          <div class="hero-actions" aria-label="Primary actions">
+            <a class="button button-primary" href="#projects">
+              <span aria-hidden="true">↗</span>
+              View work
+            </a>
+            <a
+              class="button button-ghost"
+              href="ideas/KoushikBabuAS_resumedraft%20copy.pdf"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <span aria-hidden="true">▣</span>
+              Resume
+            </a>
+          </div>
+          <div class="hero-status" aria-live="polite">
+            <span class="pulse-dot"></span>
+            <span id="scene-caption">Interactive AI constellation loaded</span>
+          </div>
+        </div>
+        <aside class="hero-panel" aria-label="Profile highlights" data-animate>
+          <div>
+            <span class="metric-value" id="project-count">10</span>
+            <span class="metric-label">featured projects</span>
+          </div>
+          <div>
+            <span class="metric-value">7.59</span>
+            <span class="metric-label">current CGPA</span>
+          </div>
+          <div>
+            <span class="metric-value">2026</span>
+            <span class="metric-label">B.Tech AI</span>
+          </div>
+        </aside>
+      </section>
+
+      <section class="signal-strip" aria-label="Quick profile facts">
+        <span>Qwen2.5 LoRA</span>
+        <span>GPT-2 from scratch</span>
+        <span>WikiText-103</span>
+        <span>Next.js</span>
+        <span>Expo</span>
+        <span>Django</span>
+        <span>Supabase</span>
+        <span>AWS S3</span>
+      </section>
+
+      <section class="section section-intro" aria-labelledby="about-title">
+        <div class="section-heading" data-animate>
+          <p class="eyebrow">About</p>
+          <h2 id="about-title">Applied AI with product instincts.</h2>
+        </div>
+        <div class="intro-copy" data-animate>
+          <p>
+            I am pursuing B.Tech in Artificial Intelligence at SRM
+            IST-Kattankulathur. My work focuses on model engineering and product
+            execution: fine-tuning code models, training GPT-style models from
+            scratch, and building production-ready applications.
+          </p>
+          <p>
+            My final-year focus is an intelligent health records platform with
+            consent-first architecture, while I also build practical products
+            like cross-platform subscription and expense tracking apps.
+          </p>
+        </div>
+      </section>
+
+      <section class="section section-projects" id="projects" aria-labelledby="projects-title">
+        <div class="section-heading" data-animate>
+          <p class="eyebrow">Projects</p>
+          <h2 id="projects-title">Selected builds and experiments.</h2>
+        </div>
+
+        <div class="project-controls" aria-label="Project filters" data-animate>
+          <button class="filter-button is-active" type="button" data-filter="all">All</button>
+          <button class="filter-button" type="button" data-filter="llm">LLM</button>
+          <button class="filter-button" type="button" data-filter="vision">Vision</button>
+          <button class="filter-button" type="button" data-filter="platform">Platform</button>
+          <button class="filter-button" type="button" data-filter="ongoing">Ongoing</button>
+        </div>
+
+        <div class="project-grid" id="project-grid" aria-live="polite"></div>
+      </section>
+
+      <section class="section section-skills" id="skills" aria-labelledby="skills-title">
+        <div class="section-heading" data-animate>
+          <p class="eyebrow">Skills</p>
+          <h2 id="skills-title">Tools I use to ship AI ideas.</h2>
+        </div>
+        <div class="skill-layout">
+          <div class="skill-column" data-animate>
+            <h3>Programming</h3>
+            <div class="pill-stack">
+              <span>Python</span>
+              <span>C</span>
+              <span>C++</span>
+              <span>Java basics</span>
+              <span>SQL</span>
+            </div>
+          </div>
+          <div class="skill-column" data-animate>
+            <h3>AI and Backend</h3>
+            <div class="pill-stack">
+              <span>TensorFlow</span>
+              <span>PyTorch</span>
+              <span>OpenCV</span>
+              <span>Flask</span>
+              <span>LangChain</span>
+              <span>FAISS</span>
+            </div>
+          </div>
+          <div class="skill-column" data-animate>
+            <h3>Systems</h3>
+            <div class="pill-stack">
+              <span>YOLO</span>
+              <span>Git/GitHub</span>
+              <span>VS Code</span>
+              <span>MongoDB</span>
+              <span>MySQL</span>
+              <span>CNNs</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-timeline" aria-labelledby="timeline-title">
+        <div class="section-heading" data-animate>
+          <p class="eyebrow">Education and certifications</p>
+          <h2 id="timeline-title">Academic track and learning path.</h2>
+        </div>
+        <div class="timeline" data-animate>
+          <article>
+            <span>2026</span>
+            <h3>SRM IST-Kattankulathur</h3>
+            <p>B.Tech - Artificial Intelligence, CGPA 7.59/10</p>
+          </article>
+          <article>
+            <span>2025</span>
+            <h3>LLM Engineering</h3>
+            <p>Master AI, Large Language Models and Agents - ongoing.</p>
+          </article>
+          <article>
+            <span>2024</span>
+            <h3>Complete Bootcamp in AI, ML and Data Science</h3>
+            <p>Udemy certification covering applied machine learning workflows.</p>
+          </article>
+          <article>
+            <span>2023-2025</span>
+            <h3>NPTEL certifications</h3>
+            <p>Programming in Java, Database Management System, Privacy and Security in Online Social Media.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-resume" id="resume" aria-labelledby="resume-title">
+        <div class="section-heading" data-animate>
+          <p class="eyebrow">Resume</p>
+          <h2 id="resume-title">The PDF draft stays attached.</h2>
+        </div>
+        <div class="resume-layout">
+          <div class="resume-copy" data-animate>
+            <p>
+              The site uses your resume draft for the profile data and keeps
+              the PDF available for recruiters or reviewers who want the
+              original document.
+            </p>
+            <div class="resume-actions">
+              <a
+                class="button button-primary"
+                href="ideas/KoushikBabuAS_resumedraft%20copy.pdf"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <span aria-hidden="true">□</span>
+                Open PDF
+              </a>
+              <a
+                class="button button-ghost"
+                href="ideas/KoushikBabuAS_resumedraft%20copy.pdf"
+                download
+              >
+                <span aria-hidden="true">⇩</span>
+                Download
+              </a>
+            </div>
+          </div>
+          <div class="resume-frame" data-animate>
+            <a
+              href="ideas/KoushikBabuAS_resumedraft%20copy.pdf"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Open Koushik Babu A S resume PDF"
+            >
+              <img
+                src="assets/resume-preview.png"
+                alt="Preview of Koushik Babu A S resume"
+                width="848"
+                height="1200"
+              />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-contact" id="contact" aria-labelledby="contact-title">
+        <div class="section-heading" data-animate>
+          <p class="eyebrow">Contact</p>
+          <h2 id="contact-title">Let us build the next AI product.</h2>
+        </div>
+        <div class="contact-grid" data-animate>
+          <a href="mailto:Koushik2515@gmail.com">
+            <span>Email</span>
+            Koushik2515@gmail.com
+          </a>
+          <a href="tel:+919360503334">
+            <span>Phone</span>
+            +91 93605 03334
+          </a>
+          <a href="https://www.linkedin.com/in/koushikbabu/" target="_blank" rel="noreferrer">
+            <span>LinkedIn</span>
+            linkedin.com/in/koushikbabu
+          </a>
+          <a href="https://github.com/koushikkb12" target="_blank" rel="noreferrer">
+            <span>GitHub</span>
+            github.com/koushikkb12
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Koushik Babu A S</span>
+      <span>Pondicherry, India</span>
+      <span>English / Tamil / Sourashtra</span>
+    </footer>
+
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
